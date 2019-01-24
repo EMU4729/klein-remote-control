@@ -10,7 +10,9 @@ void setup() {
   Serial.begin(115200);
   motorSetup();
   pinMode(sensorPin, INPUT);
-  remoteSetup("Klein", "password");
+  remoteName("Robot");
+  remotePassword("password");
+  remoteSetup();
 }
 
 void loop() {
